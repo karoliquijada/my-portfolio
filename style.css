@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --platzi-blue: #0c1633;
+    --deep-green: #192824;
+    --light-green: #24997a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Revisar esta propiedad */
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif, 'Courier New', Courier, monospace;
+   /*  background-color: var(--deep-green); */
+}
+
+button {
+    cursor: pointer;
+  }
+  
+.container {
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h1, h2, p {
+    padding: 5px 0;
+}
+
+.intro {
+    font-size: 1.2em;
+
+}
+
+
+/*----------------------MAIN NAV----------------------*/
+#main-navbar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 40px 0;
+}
+
+#main-navbar ul li {   
+    list-style: none;
+    padding: 0 10px;
+}
+
+#main-navbar ul li a {
+    font-weight: bold;
+    text-decoration: none;  
+    text-transform: uppercase;
+    color: black;
+    font-size: 1em;    
+    letter-spacing: 1px;
+}
+
+#main-navbar ul li a:hover {
+    color: rgb(65, 64, 64);
+}
+
+/*----------------------SOCIAL MEDIA NAV---------------*/
+#social-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 30vh;
+    left: 40px;
+}
+
+#social-nav a {
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.icon-height {
+    width: 25px;
+    height: 25px;
+}
+
+hr {  
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);
+    height: 100vh;
+    width: 1px;       
+}
+
+/*----------------------CONTENT----------------------*/
+.s-title {
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.s-description {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.img-holder {
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-size {
+    width: 100%;
+    height: auto;
+}
+
+.line {
+    width: 70%;
+    border: none;
+    border-top: 2px solid hsla(200, 10%, 50%,100);
+    height: 1px; 
+    margin: 0 auto;
+}
+
+/*----------------------PROJECTS----------------------*/
+.projects-container {
+    width: 100%;  
+    height: auto;  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    row-gap: 100px;
+}
+
+.project {
+    background-color: burlywood;     
+    width: 100%;
+    height: auto;
+    max-width: 950px;
+    border-radius: 5px; 
+    overflow: hidden;
+    /* Agregar sombra */
+}
+
+.p-img {
+    max-width: 950px;
+    height: auto;
+}
+.info {
+    padding: 20px;
+}
+
+.p-stack {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(48, 48, 48);
+    font-size: 11px;
+}
+
+.p-description {
+    text-align: justify;
+}
+
+.p-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-footer a {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color:white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+ 
+
+/*----------------------FOOTER----------------------*/
+footer {
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0;
+}
+
+
+/*------------------MEDIA QUERIES--------------*/
+@media only screen and (max-width: 600px) {
+  
+    /* The side navigation menu */
+    #main-navbar {
+        height: 100vh;
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    #main-navbar ul {
+        top: 50px;
+        flex-direction: column;
+    }
+
+    /*  The navigation menu links  */
+    #main-navbar ul li{
+        padding: 15px 50px;
+    }
+    
+   /*  The navigation menu links  */
+    #main-navbar ul li a {
+        color: #818181;
+        transition: 0.3s;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    #social-nav {
+        display: none;    
+    }  
+}
+
+@media only screen and (min-width: 600px) {
+    .closebtn {
+        display: none;
+    }
+
+}
+/*  Añadir efecto de opacidad a las imágenes
+    Añadir animación a los íconos
+ */

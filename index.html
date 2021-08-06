@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+    
+    <!-- Style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>  
+    <header class="header">  
+        <span class="closebtn" onclick="openNav()"><img src="images/menu.png" alt="open nav"></span>                                                   
+        <nav id="main-navbar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/eliminar-simbolo.png" alt="close nav"></a>  
+            <ul>
+                <li>
+                    <a href="#about-me">About me</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Projects</a> 
+                </li>
+                <li>
+                    <a href="#archive">Archive</a> 
+                </li>
+                <li>
+                    <a href="#contact">Contact</a> 
+                </li>
+            </ul>
+        </nav>  
+                       
+        <div class="container head">
+            <h1>&ltWeb Developer /&gt</h1>
+            <h2 class="intro">Hola, mi nombre es Karoli.</h2>  
+        </div>
+    </header>         
+
+    <!-- SOCIAL MEDIA NAV -->
+    <nav id="social-nav">       
+        <a href="https://github.com/karoliquijada" target="_blank">
+            <img class="icon-height" src="images/redes sociales/github.png" alt="github link">
+        </a>    
+        <a href="" target="_blank">
+            <img class="icon-height" src="images/redes sociales/instagram (1).png" alt="instagram link">
+        </a>   
+        <a href="" target="_blank">
+            <img class="icon-height" src="images/redes sociales/linkedin (1).png" alt="linkedin link">
+        </a>   
+        <a href="" target="_blank">
+            <img class="icon-height" src="images/redes sociales/codepen.png" alt="codepen link">
+        </a>                
+        <hr>                
+    </nav>  
+    
+    <main> 
+        <div id="content">
+            <!-- ABOUT ME SECTION -->
+           <section class="container" id="about-me" >
+                <h1 class="s-title">About me</h1>
+                <h2 class="s-description">Things I've built</h2>
+                <p>Soy venezolana.Tengo 22 años. Comencé con el diseño de algunos blogs hace unos años, utilizando HTML y CSS y no hubo vuelta atras. </p>
+               <!--  <div class="img-holder">
+                    <img class="img-size" src="images/karoliquijada.jpg" alt="profile picture">
+                </div>  -->
+               
+            </section>            
+
+            <!-- PROJECTS CONTAINER -->
+            <section class="container head" id="portfolio">              
+                
+                <h1 class="s-title">Projects</h1>
+                <h2 class="s-description">Things I've built</h2>
+
+                <div class="projects-container">
+                    <div class="project">                      
+                            <div class="p-img"> 
+                                <img class="img-size" src="images/desktop-design.jpg" alt="proyecto">
+                            </div>
+                            <div class="info">
+                                <h3 class="p-title">Twitter clone</h3>
+                                <p class="p-stack">React JS</p>  
+                                <p class="p-copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Tenetur suscipit ut itaque placeat nemo, eaque delectus rem repellat nostrum pariatur.</p>
+                            <div class="p-footer"> 
+                                <div class="icons">
+                                    <a href="https://github.com/kaaaroliq" target="_blank">
+                                        <img class="icon-height" src="images/redes sociales/github.png" alt="github link">
+                                    </a>                             
+                                    <a href="" target="_blank">
+                                        <img class="icon-height" src="images/redes sociales/codepen.png" alt="codepen link">
+                                    </a> 
+                                </div>                            
+                                <button class="btn" type="submit">Ver más</button>                       
+                            </div>                                                      
+                        </div>                                                                             
+                    </div>           
+            </section>
+            <!-- ARCHIVE OR OTHER PROJECTS CONTAINER -->
+            <section id="archive"  class="container">
+                <h1 class="s-title">Archive</h1>
+                <h2 class="s-description">Cause there's no time like now</h2>  
+            </section>
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="container">
+                <h1 class="s-title">Contact</h1>
+                <h2 class="s-description">Cause there's no time like now</h2>  
+            </section>
+        </div>        
+    </main>
+    <footer>
+        <p>Design and built by @iGirliCode | Karoli Quijada</p>    
+    </footer>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
